@@ -1,3 +1,10 @@
+<%-- 
+    Document   : CadastrarFuncionario
+    Created on : Nov 4, 2016, 8:41:30 PM
+    Author     : MarcosVinicius
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +42,7 @@
 					<a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
 					<a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
 					<br>
-					<p align="right">Bem vindo Admin
+					<p align="right">Bem vindo Gerente
 					<a href="login.html" class=" btn btn-link">Sair</a></p>
                 </ul>
             </div>
@@ -52,13 +59,13 @@
 					<div class="form-group">
 						<label class="col-sm-1">Nome:</label>
 						<div class="col-sm-11"> 
-							<input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+							<input type="text" class="form-control" name="nome" placeholder="Digite o nome">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-1">CPF:</label>
+							<label class="col-sm-1">CPF:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">							
+							<input type="text" class="form-control" name="cpf" placeholder="Digite o CPF">							
 						</div>
 							<label class="col-sm-1">Ativo:</label>
 								<div>
@@ -68,48 +75,42 @@
 								<div>
 									<input type="radio" name="at" value="ativo" class="col-sm-1">                            
 								</div>													
-							<label class="col-sm-1">Loja:</label>
-							<div>
-								<select name = "loja">
-									<option value = "lj1">Loja 1</option>
-									<option value = "lj2">Loja 2</option>								
-								</select>						
-							</div>
-					</div>					
+					</div>
+					
 					<div class="form-group">
-						<label class="col-sm-1">Tel:</label>
+						<label class="col-sm-1">Telefone:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="tel1" placeholder="Digite o Telefone">							
+							<input type="text" class="form-control" name="tel" placeholder="Digite o Telefone">							
 						</div>
-						<label class="col-sm-1">Tel2:</label>
+						<label class="col-sm-1">Celular:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="tel2" placeholder="Digite o Telefone">
+							<input type="text" class="form-control" name="cel" placeholder="Digite o Celular">
 						</div>
 					</div>									
 					<div class="form-group">
 						<label class="col-sm-1">Endereço:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="end" placeholder="Digite o Endereço">							
+							<input type="text" class="form-control" name="end" placeholder="Digite o Endereço">							
 						</div>
 						<label class="col-sm-1">Número:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="num" placeholder="Digite o Número">
+							<input type="text" class="form-control" name="num" placeholder="Digite o Número">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1">Bairro:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">							
+							<input type="text" class="form-control" name="bairro" placeholder="Digite o Bairro">							
 						</div>
 						<label class="col-sm-1">CEP:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+							<input type="text" class="form-control" name="cep" placeholder="Digite o CEP">
 						</div>						
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1">Cidade:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" id="cidade" placeholder="Digite a Cidade">							
+							<input type="text" class="form-control" name="cidade" placeholder="Digite a Cidade">							
 						</div>
 						<label class="col-sm-1">UF:</label>
 						<div class="col-sm-5"> 
@@ -119,11 +120,7 @@
 							</select>
 						</div>
 					</div>
-						<div>
-							<label class="col-sm-1">Observações:</label>
-							<textarea name="obs" rows="8" cols="100"></textarea>
-
-						</div>
+						
 					<div>
 						<button type="submit" class="btn btn-primary">Enviar</button>
 						<button type="reset" class="btn btn-danger "> Cancelar</button>
@@ -168,24 +165,6 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/Slides-SlidesJS-3/examples/playing/js/jquery.slides.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#slides').slidesjs({
-                width: 940,
-                height: 528,
-                play: {
-                    active: true,
-                    auto: true,
-                    interval: 4000,
-                    swap: true
-                }
-            });
-        });
-
-    </script>
-
+    
 </body>
 </html>
