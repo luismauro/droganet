@@ -5,6 +5,7 @@
  */
 package br.com.droganet.controller;
 
+import br.com.droganet.model.Funcionario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -32,6 +33,13 @@ public class InserirFuncionario extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        
+        Funcionario f =new Funcionario();
+        
+        f.setNome(request.getParameter("nome"));
+        f.setCpf(request.getParameter("cpf"));
+        
+        
         
     }
 

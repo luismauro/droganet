@@ -52,7 +52,7 @@
 		<div class="container">
 			<div class="row main-low-margin ">
 				<div class="row"></br></br></br></div>
-				<form class="form-horizontal col-sm-12" align="center">				
+                                <form class="form-horizontal col-sm-12" align="center" method="POST" action="InserirFuncionario">				
 				<fieldset>
 				<legend><h1>Cadastrar Funcionario</h1></legend>
 					
