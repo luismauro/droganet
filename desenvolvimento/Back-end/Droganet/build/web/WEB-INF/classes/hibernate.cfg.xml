@@ -8,7 +8,7 @@
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">12345</property>
     <property name="hibernate.current_session_context_class">thread</property>
-    <property name="hibernate.hbm2ddl.auto">create-drop</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
     <mapping class="br.com.droganet.model.Administrador"/>
     <mapping class="br.com.droganet.model.Plano"/>
     <mapping class="br.com.droganet.model.Loja"/>

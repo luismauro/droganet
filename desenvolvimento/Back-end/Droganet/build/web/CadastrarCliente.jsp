@@ -21,10 +21,10 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="col-md-3">
+        <div class="col-md-3">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
-		</div>
-		<div class="col-md-6">
+	</div>
+	<div class="col-md-6">
             <div id = "nav">
                 <ul>
 					<li><a href="#">CADASTRO</a>
@@ -41,7 +41,7 @@
 					</ul>											
 						<li><a href="#">Contato</a></li>
 				</ul>                           
-			</div>  
+            </div>  
         </div>
 		<div class="col-md-3">
 			<div class="navbar-collapse collapse">
