@@ -136,7 +136,7 @@
 						</div>
 						<label class="col-sm-1">UF:</label>
 						<div class="col-sm-5"> 
-							<select name="estado">
+							<select name="estado" class="largura_campo">
 								<option value="sp">SP</option>
 								<option value="mg">MG</option>								
 							</select>

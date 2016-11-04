@@ -25,17 +25,33 @@
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
 		</div>
 		<div class="col-md-6">
-                </div>	
-		</div>
+            <div id = "nav">
+                <ul>
+					<li><a href="#">CADASTRO</a>
+					<ul>
+						<li><a href="#">Cliente</a><li>																
+					</ul>
+					<li><a href="#">ESTOQUE</a>
+					<ul>
+						<li><a href="#">Produto</a><li>
+					</ul>						
+					<li><a href="#">RELATORIOS</a>
+					<ul>
+						<li><a href="#">Venda</a><li>
+					</ul>											
+						<li><a href="#">Contato</a></li>
+				</ul>                           
+			</div>  
+        </div>
 		<div class="col-md-3">
 			<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
 					<a href="#"><i class="fa fa-facebook-square fa-3x color-facebook2"></i></a>
-					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter2"></i></a>
+					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter3"></i></a>
 					<a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
 					<a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
 					<br>
-					<p align="right">Bem vindo Gerente
+					<p align="right">Bem vindo Admin
 					<a href="login.html" class=" btn btn-link">Sair</a></p>
                 </ul>
             </div>
