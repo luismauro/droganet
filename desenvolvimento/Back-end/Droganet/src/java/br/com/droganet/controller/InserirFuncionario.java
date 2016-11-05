@@ -5,6 +5,7 @@
  */
 package br.com.droganet.controller;
 
+import br.com.droganet.dao.FuncionarioDAO;
 import br.com.droganet.model.Funcionario;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -37,7 +38,18 @@ public class InserirFuncionario extends HttpServlet {
         
         f.setNome(request.getParameter("nome"));
         f.setCpf(request.getParameter("cpf"));
+        f.setAtivo(request.getParameter("at"));
+        f.setTelefone(request.getParameter("telefone"));
+        f.setEndereco("endereco");
+        f.setBairro(request.getParameter("bairro"));
+        f.setCep(request.getParameter("cep"));
+        f.setCidade(request.getParameter("cidade"));
+        f.setEstado(request.getParameter("estado"));
         
+        FuncionarioDAO fDAO = new FuncionarioDAO();
+        fDAO.salvar(f);
+        
+        response.sendRedirect("HomeSuperAdmin.html");
         
         
         

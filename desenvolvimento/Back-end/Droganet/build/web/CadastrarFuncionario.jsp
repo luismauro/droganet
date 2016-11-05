@@ -80,21 +80,21 @@
 					<div class="form-group">
 						<label class="col-sm-1">Telefone:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" name="tel" placeholder="Digite o Telefone">							
+							<input type="text" class="form-control" name="telefone" placeholder="Digite o Telefone">							
 						</div>
 						<label class="col-sm-1">Celular:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" name="cel" placeholder="Digite o Celular">
+							<input type="text" class="form-control" name="celular" placeholder="Digite o Celular">
 						</div>
 					</div>									
 					<div class="form-group">
 						<label class="col-sm-1">Endereço:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" name="end" placeholder="Digite o Endereço">							
+							<input type="text" class="form-control" name="endereco" placeholder="Digite o Endereço">							
 						</div>
 						<label class="col-sm-1">Número:</label>
 						<div class="col-sm-5"> 
-							<input type="text" class="form-control" name="num" placeholder="Digite o Número">
+							<input type="text" class="form-control" name="numero" placeholder="Digite o Número">
 						</div>
 					</div>
 					<div class="form-group">
