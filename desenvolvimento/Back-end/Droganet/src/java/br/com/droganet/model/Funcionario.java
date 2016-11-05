@@ -43,7 +43,7 @@ public class Funcionario implements Serializable {
     @Column
     private String cidade;
     @Column
-    private boolean ativo;
+    private String ativo;
     @Column
     private String estado;
     @Column
@@ -183,13 +183,15 @@ public class Funcionario implements Serializable {
         this.loja = loja;
     }
 
-    public boolean isAtivo() {
+    public String getAtivo() {
         return ativo;
     }
 
-    public void setAtivo(boolean ativo) {
+    public void setAtivo(String ativo) {
         this.ativo = ativo;
     }
+
+
  
  
     

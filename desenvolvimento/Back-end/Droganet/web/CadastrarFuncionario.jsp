@@ -73,7 +73,7 @@
 								</div>							
 							<label class="col-sm-1">Inativo:</label>
 								<div>
-									<input type="radio" name="at" value="ativo" class="col-sm-1">                            
+									<input type="radio" name="at" value="inativo" class="col-sm-1">                            
 								</div>													
 					</div>
 					
