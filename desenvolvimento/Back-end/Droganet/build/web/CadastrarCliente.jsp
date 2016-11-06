@@ -97,10 +97,14 @@
 							<input type="date" class="form-control" name="dtNasc" placeholder="Digite o Nascimento"/>							
 						</div>
 							<label class="col-sm-1">Sexo:</label>
-							<select name="sexo">
-								<option value="m">Masculino</option>
-								<option value="f">Feminino</option>								
-							</select>
+							<label class="col-sm-1">Masculino:</label>
+								<div>
+									<input type="radio" name="sexo" value="masculino" class="col-sm-1">                            
+								</div>
+							<label class="col-sm-1">Feminino:</label>
+								<div>
+									<input type="radio" name="sexo" value="feminino" class="col-sm-1">                            
+								</div>			
 					</div>									
 					<div class="form-group">
 						<label class="col-sm-1">End:</label>
