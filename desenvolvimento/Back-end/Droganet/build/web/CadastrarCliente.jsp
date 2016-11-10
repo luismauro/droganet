@@ -21,21 +21,37 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="col-md-3">
+        <div class="col-md-3">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
-		</div>
-		<div class="col-md-6">
-                </div>	
-		</div>
+	</div>
+	<div class="col-md-6">
+            <div id = "nav">
+                <ul>
+					<li><a href="#">CADASTRO</a>
+					<ul>
+						<li><a href="#">Cliente</a><li>																
+					</ul>
+					<li><a href="#">ESTOQUE</a>
+					<ul>
+						<li><a href="#">Produto</a><li>
+					</ul>						
+					<li><a href="#">RELATORIOS</a>
+					<ul>
+						<li><a href="#">Venda</a><li>
+					</ul>											
+						<li><a href="#">Contato</a></li>
+				</ul>                           
+            </div>  
+        </div>
 		<div class="col-md-3">
 			<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
 					<a href="#"><i class="fa fa-facebook-square fa-3x color-facebook2"></i></a>
-					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter2"></i></a>
+					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter3"></i></a>
 					<a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
 					<a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
 					<br>
-					<p align="right">Bem vindo Gerente
+					<p align="right">Bem vindo Admin
 					<a href="login.html" class=" btn btn-link">Sair</a></p>
                 </ul>
             </div>
@@ -81,10 +97,14 @@
 							<input type="date" class="form-control" name="dtNasc" placeholder="Digite o Nascimento"/>							
 						</div>
 							<label class="col-sm-1">Sexo:</label>
-							<select name="sexo">
-								<option value="m">Masculino</option>
-								<option value="f">Feminino</option>								
-							</select>
+							<label class="col-sm-1">Masculino:</label>
+								<div>
+									<input type="radio" name="sexo" value="masculino" class="col-sm-1">                            
+								</div>
+							<label class="col-sm-1">Feminino:</label>
+								<div>
+									<input type="radio" name="sexo" value="feminino" class="col-sm-1">                            
+								</div>			
 					</div>									
 					<div class="form-group">
 						<label class="col-sm-1">End:</label>
@@ -111,11 +131,11 @@
 						<div class="col-sm-5"> 
 							<input type="text" class="form-control" name="cidade" placeholder="Digite o Cidade">							
 						</div>
-						<label class="col-sm-1">UF:</label>
+						<label class="col-sm-1">Estado:</label>
 						<div class="col-sm-5"> 
-							<select name="estado">
-								<option value="sp">SP</option>
-								<option value="mg">MG</option>								
+                                                    <select name="estado" class="form-control">
+								<option value="Sao Paulo">São Paulo</option>
+								<option value="Minas Gerais">Minas Gerais</option>								
 							</select>
 						</div>
 					</div>
