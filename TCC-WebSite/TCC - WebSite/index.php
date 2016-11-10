@@ -1,8 +1,8 @@
 <?php
-    require_once 'config/conexao.class.php';
+    require_once('config/conexao.class.php');
 
-    $con = new conexao(); // instancia classe de conxao
-    $con->connect(); // abre conexao com o banco
+    //$con = new conexao(); // instancia classe de conxao
+    //$con->connect(); // abre conexao com o banco
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,14 +11,7 @@
         <title></title>
     </head>
     <body>
-       <?php
-            //apenas testando a conexao
-            if($con->connect() == true){
-                echo 'Conectou';
-            }else{
-                echo 'Não conectou';
-            }
-        ?>
+       
 
         <table style="border: 2px solid red;">
             <thead>
@@ -30,8 +23,13 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta = mysql_query("SELECT * FROM faces"); // query que busca todos os dados da tabela PRODUTO
-                    while($campo = mysql_fetch_array($consulta)){ // laço de repetiçao que vai trazer todos os resultados da consulta
+					$query = "SELECT * FROM faces";
+			
+					$resultado = Dao::conn()->execQuery($query);
+				
+				
+                    //$consulta = mysql_query("SELECT * FROM faces"); // query que busca todos os dados da tabela PRODUTO
+                    while($campo = mysql_fetch_array($resultado)){ // laço de repetiçao que vai trazer todos os resultados da consulta
                 ?>
                     <tr>
                         <td>
@@ -43,4 +41,3 @@
         </table>
     </body>
 </html>
-<?php $con->disconnect(); // fecha conexao com o banco ?>
