@@ -62,6 +62,7 @@ public class Login extends HttpServlet {
       else
       {
           System.out.println("Preencha todos os campos");
+          response.sendRedirect("login.jsp");
       }
       
       
