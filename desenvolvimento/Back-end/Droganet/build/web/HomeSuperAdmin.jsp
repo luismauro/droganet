@@ -1,18 +1,33 @@
+<%-- 
+    Document   : HomeSuperAdmin
+    Created on : 11/11/2016, 01:41:25
+    Author     : luis
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>:: DROGANET ::</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-</head>
-<body>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+         <meta name="description" content="">
+         <meta name="author" content="">
+         <title>:: DROGANET ::</title>
+         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+         <link href="assets/css/bootstrap.css" rel="stylesheet" />
+         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+         <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet" />
+         <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+   <body>
+       <%
+     
+           String login = String.valueOf(request.getAttribute("LoginATT"));
+           String senha = String.valueOf(request.getAttribute("SenhaATT"));
+        
+           session.putValue("loginUsuario", login);
+           session.putValue("SenhaUsuario", senha);
+           %>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="col-md-3">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
@@ -35,8 +50,8 @@
                     <a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
                     <a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
                     <br>
-                    <p align="right">Bem vindo
-                    <a href="login.html" class=" btn btn-link">Sair</a></p>
+                    <p align="right">Bem vindo <%=session.getValue("loginUsuario")%>
+                    <a href="login.jsp" class=" btn btn-link">Sair</a></p>
                 </ul>
             </div>
         </div>
@@ -47,9 +62,7 @@
                 <div class="row"></br></br></br></div>
                 <form class="form-horizontal col-sm-12" align="center">             
                 <fieldset>
-                <legend class="form-horizontal col-sm-11" align="center"><h1>Estoque Medicamentos &emsp;&emsp; Vendas Loja</h1></legend>
-                    <IMG SRC="assets\img\graficoVendas.jpg" BORDER=0> 
-					&emsp;
+                <legend><h1>Total Vendas</h1></legend>
                     <IMG SRC="assets\img\graficoVendas.jpg" BORDER=0> 
                     
                 </fieldset>

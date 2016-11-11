@@ -1,18 +1,28 @@
+<%-- 
+    Document   : login
+    Created on : 11/11/2016, 00:28:45
+    Author     : luis
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>:: DROGANET ::</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-</head>
-<body>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>:: DROGANET ::</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <%
+            session.invalidate();
+            %>
     <div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="col-md-3">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
@@ -39,7 +49,7 @@
 		<div class="container">
 			<div class="row main-low-margin ">
 				<div class="row"></br></br></br></div>
-				<form class="form-horizontal col-sm-12" align="center">				
+				<form class="form-horizontal col-sm-12" align="center" method="POST" action="Login">				
 				<fieldset>
 				<legend><h1>Logar</h1></legend>
 					
@@ -48,8 +58,8 @@
 						
 						
 						
-							<label id="label-login1">Login:</label><input id="form-login1" type="text" class="form-control" id="loja" placeholder="Digite seu login ou e-mail" style="width:600px;"><br>
-							<label id="label-login2">Senha:</label><input id="form-login2" type="password" class="form-control" id="loja" placeholder="Digite sua senha" style="width:600px;">
+							<label id="label-login1">Login:</label><input id="form-login1" name="login" type="text" class="form-control" id="loja" placeholder="Digite seu login ou e-mail" style="width:600px;"><br>
+							<label id="label-login2">Senha:</label><input id="form-login2" name="senha" type="password" class="form-control" id="loja" placeholder="Digite sua senha" style="width:600px;">
 						
 						<br><br><br><br>
 						
