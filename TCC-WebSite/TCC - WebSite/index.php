@@ -24,6 +24,7 @@
             <tbody>
                 <?php
 					$query = "SELECT * FROM faces";
+					$query = 'SELECT NOW() as qtd';
 			
 					$resultado = Dao::conn()->execQuery($query);
 				
