@@ -23,24 +23,59 @@
 </head>
 <body>
        <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="col-md-3">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
+		<div class="col-md-3">
+            <a class="navbar-brand" href="index.jsp"><img src="assets/img/logo.png" width="270" height="70"/></a>
+		</div>
+		<div class="col-md-6">
+            <div id = "nav">
+                 <ul>
+					<li><a >CADASTRO</a>
+					<ul>
+                                                <li><a href="CadastrarCredito.jsp">Creditos</a><li>
+						<li><a href="CadastrarCliente.jsp">Cliente</a><li>
+                                                <li><a href="CadastrarFornecedor.jsp">Fornecedor</a><li>
+                                                <li><a href="CadastrarFuncionario.jsp">Funcionario</a><li>
+                                                <li><a href="CadastrarLoja.jsp">Loja</a><li>
+                                                <li><a href="CadastrarMedicamento.jsp">Medicamento</a><li>
+                                                <li><a href="CadastrarRede.jsp">Rede</a><li>
+                                                <li><a href="CadastrarTipo.jsp">Tipo</a><li>
+                                                <li><a href="CadastrarVenda.jsp">Venda</a><li>
+                                                    
+					</ul>
+                                        <li><a>CONSULTA</a>
+					<ul>
+						<li><a href="CaixaFinal.jsp">Caixa Final</a><li>
+                                                <li><a href="ListaFuncionario.jsp">Funcionario</a><li>
+                                                <li><a href="ListaMedicamento.jsp">Medicamento</a><li>
+                                                <li><a href="ListaLoja.jsp">Loja</a><li>
+					</ul>
+					<li><a>ESTOQUE</a>
+					<ul>
+						<li><a href="estoque.jsp">Produto</a><li>
+					</ul>						
+					<li><a>RELATORIOS</a>
+					<ul>
+						<li><a href="RelatorioVenda.jsp">Venda</a><li>
+                                                <li><a href="RelatorioCliente.jsp">Cliente</a><li>
+                                                <li><a href="RelatorioMedicamento.jsp">Medicamento</a><li>
+					</ul>											
+						<li><a href="#">Contato</a></li>
+				</ul>                              
+			</div>  
         </div>
-        <div class="col-md-6">
-           
-        </div>
-        
-        <div class="col-md-3 right">
-            <div class="navbar-collapse collapse">
+		<div class="col-md-3">
+			<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook2"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square fa-3x color-twitter3"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
-                    <br>
+					<a href="#"><i class="fa fa-facebook-square fa-3x color-facebook2"></i></a>
+					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter3"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
+					<a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
+					<br>
+					<p align="right">Bem vindo <%=session.getValue("loginUsuario")%>
+                    <a href="index.jsp" class=" btn btn-link">Sair</a></p>
                 </ul>
             </div>
-        </div>
+		</div>
     </div>
 		<div class="container">
 			<div class="row main-low-margin ">

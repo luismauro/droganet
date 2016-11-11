@@ -25,7 +25,7 @@
             %>
     <div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="col-md-3">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="270" height="70"/></a>
+            <a class="navbar-brand" href="index.jsp"><img src="assets/img/logo.png" width="270" height="70"/></a>
 		</div>
 		<div class="col-md-7">
 			<div class="navbar-collapse collapse">
@@ -36,7 +36,7 @@
 			<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
 					<a href="#"><i class="fa fa-facebook-square fa-3x color-facebook2"></i></a>
-					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter2"></i></a>
+					<a href="#"><i class="fa fa-twitter-square fa-3x color-twitter3"></i></a>
 					<a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus2"></i></a>
 					<a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin2"></i></a>
 					<br>
