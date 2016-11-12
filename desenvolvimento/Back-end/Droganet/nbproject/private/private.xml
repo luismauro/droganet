@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/MarcosVinicius/Desktop/Git/droganet/desenvolvimento/Back-end/Droganet/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/MarcosVinicius/Desktop/Git/droganet/desenvolvimento/Back-end/Droganet/web/CadastrarLoja.jsp</file>
+            <file>file:/C:/Users/MarcosVinicius/Desktop/Git/droganet/desenvolvimento/Back-end/Droganet/web/CadastrarCliente.jsp</file>
+            <file>file:/C:/Users/MarcosVinicius/Desktop/Git/droganet/desenvolvimento/Back-end/Droganet/web/CadastrarFuncionario.jsp</file>
+            <file>file:/C:/Users/MarcosVinicius/Desktop/Git/droganet/desenvolvimento/Back-end/Droganet/web/CadastrarRede.jsp</file>
+        </group>
     </open-files>
 </project-private>

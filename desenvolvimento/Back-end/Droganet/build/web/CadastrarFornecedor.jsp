@@ -24,7 +24,6 @@
         <div class="col-md-3">
             <a class="navbar-brand" href="index.jsp"><img src="assets/img/logo.png" width="270" height="70"/></a>
         </div>
-<<<<<<< HEAD:desenvolvimento/Back-end/Droganet/build/web/CadastrarFornecedor.jsp
 		<div class="col-md-6">
             <div id = "nav">
                  <ul>
@@ -61,18 +60,6 @@
 						<li><a href="#">Contato</a></li>
 				</ul>                            
 			</div>  
-=======
-        <div class="col-md-7">
-            <div class="navbar-collapse collapse">
-                 <ul class="nav navbar-nav">
-           
-                    <li><a href="index.html"><b>CADASTRO</b></a></li>
-                    <li><a href="about.html"><b>ESTOQUE</b></a></li>
-                    <li><a href="services.html"><b>RELATORIOS</b></a></li>
-                    <li><a href="contact.html"><b>CONTATO</a></b></li>              
-                </ul>   
-            </div>  
->>>>>>> 863c741e342c5f8d99af3605838def9ca80d3754:desenvolvimento/Back-end/Droganet/web/cadastrofornecedor.html
         </div>
         <div class="col-md-3">
             <div class="navbar-collapse collapse">
