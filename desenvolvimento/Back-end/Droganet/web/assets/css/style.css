@@ -37,13 +37,13 @@ th{
 }
 
 form {
-    /* Apenas para centralizar o form na página */
+    /*Apenas para centralizar o form na página*/
     margin: 0 auto;
-    width: 400px;
+    width: 400px;	
     /* Para ver as bordas do formulário */
     padding: 1em;
     border: 1px solid #1E90FF;
-    border-radius: 1em;
+    border-radius: 1em;		
 }
 
 form div + div {
@@ -62,7 +62,7 @@ body {
     font-size: 14px;
     color: #000;
     line-height: 10px;
-    font-weight: 400;
+    font-weight: 400;		
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -187,16 +187,16 @@ p {
     color: #fff;
 }
 .circle-body {
- width: 150px;
-height: 150px;
-margin: 0 auto 14px auto;
-border: 5px solid #ADA2EB;
-border-radius: 100%;
-background-color: #FFFFFF;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 14px auto;
+	border: 5px solid #ADA2EB;
+	border-radius: 100%;
+	background-color: #FFFFFF;
 }
 .icon-set {
     position: relative;
-padding: 30px;
+	padding: 30px;
 }
 /* ==========================================================================
    PRICE SECTION
@@ -311,7 +311,8 @@ color: #FF0000;
 
 .navbar-inverse {
     background: #fff;
-    border-color: #fff;
+    border-color: #fff;		
+	
 }
 
     .navbar-inverse .navbar-nav > .active > a {
@@ -343,15 +344,16 @@ color: #FF0000;
 #footer {
     background-color: #003366;
     color: #fff;
-    padding: 30px;
+    padding: 30px;	
 }
 
 
-/* ------------------------------------------------------
-	MENU 
-   ------------------------------------------------------*/
+/* ==========================================================================
+   MENU
+   ========================================================================== */    
+
 #nav {
-	    margin-top: 55px; 		
+	    margin-top: 15px; 										
 	}
 	#nav ul {
 	    font: 16px arial, tahoma, verdana;
@@ -363,23 +365,24 @@ color: #FF0000;
 	    float: left;
 	    position: relative;
 	    display: block;
-		padding: 1px 2px;	    
+		padding: 1px 2px;	    		
 	}
 	#nav ul li a {
-	    color: white;
-	    background: blue;
+		color: #ffffff;
+		background-color: #428bca;
+		border-color: #357ebd;	    	    
 	    text-decoration: none;
 	    margin: 1px 1px;
 	    padding: 15px 20px;	    
 	    display: block;
-		border-radius: 10px;
+		border-radius: 10px;					
 	}
 	#nav li ul {
 	    display: none;
 	}
 	#nav ul li a:hover {
-	    background: red;
-	    color: white;
+	    background-color: #428bca;
+	    color: #ffffff;
 	}
 	#nav li:hover ul {
 	    display: block;
@@ -390,9 +393,10 @@ color: #FF0000;
 	    font-size: 12px;
 	}
 	#nav li:hover a {
-	    background: red;
-	    color: white;
+	  color: #ffffff;
+	  background-color: #d9534f;
+	  border-color: #d43f3a;
 	}
 	#nav li:hover li a:hover {
-	    background: blue;
+		background-color: #428bca;	
 	}
