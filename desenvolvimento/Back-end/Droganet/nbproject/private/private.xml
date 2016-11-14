@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/web/cadastrar_creditos.html</file>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/src/java/br/com/droganet/controller/InserirLoja.java</file>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/web/CadastrarLoja.jsp</file>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/src/java/br/com/droganet/controller/InserirCliente.java</file>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/web/cadastrofornecedor.html</file>
+            <file>file:/C:/git/droganet/desenvolvimento/Back-end/Droganet/src/java/br/com/droganet/controller/InserirFuncionario.java</file>
+        </group>
     </open-files>
 </project-private>

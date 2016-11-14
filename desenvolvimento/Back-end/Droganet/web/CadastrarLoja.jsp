@@ -1,3 +1,10 @@
+<%-- 
+    Document   : CadastrarLoja
+    Created on : 11/11/2016, 20:44:56
+    Author     : Gustavo
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,60 +52,60 @@
         <div class="container">
             <div class="row main-low-margin ">
                 <div class="row"></br></br></br></div>
-                <form class="form-horizontal col-sm-12" align="center">             
+                <form class="form-horizontal col-sm-12" action="InserirLoja" method="POST" align="center">             
                 <fieldset>
                 <legend><h1>Cadastrar Loja</h1></legend>
                     
                     <div class="form-group">
                         <label class="col-sm-1">Razão Social:</label>
                         <div class="col-sm-11"> 
-                            <input type="text" class="form-control" id="rs" placeholder="Digite a razão social">
+                            <input type="text" class="form-control" name="rs" placeholder="Digite a razão social">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">CNPJ:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ">                            
+                            <input type="text" class="form-control" name="cnpj" placeholder="Digite o CNPJ">                            
                         </div>
                         <label class="col-sm-1">Insc. Est:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="ie" placeholder="Digite a Inscrição Estadual">
+                            <input type="text" class="form-control" name="ie" placeholder="Digite a Inscrição Estadual">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Fone:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="tel" placeholder="Digite o Telefone">                           
+                            <input type="text" class="form-control" name="tel" placeholder="Digite o Telefone">                           
                         </div>
                         <label class="col-sm-1">Fone2:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="tel2" placeholder="Digite outro Telefone">
+                            <input type="text" class="form-control" name="tel2" placeholder="Digite outro Telefone">
                         </div>
                     </div>                                           
                     <div class="form-group">
                         <label class="col-sm-1">End:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="end" placeholder="Digite o Endereço">                           
+                            <input type="text" class="form-control" name="end" placeholder="Digite o Endereço">                           
                         </div>
                         <label class="col-sm-1">Número:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="num" placeholder="Digite o Número">
+                            <input type="text" class="form-control" name="num" placeholder="Digite o Número">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Bairro:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">                          
+                            <input type="text" class="form-control" name="bairro" placeholder="Digite o Bairro">                          
                         </div>
                         <label class="col-sm-1">CEP:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                            <input type="text" class="form-control" name="cep" placeholder="Digite o CEP">
                         </div>                      
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Cidade:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cidade" placeholder="Digite o Cidade">                          
+                            <input type="text" class="form-control" name="cidade" placeholder="Digite o Cidade">                          
                         </div>
                         <label class="col-sm-1">UF:</label>
                         <div class="col-sm-5"> 
@@ -116,33 +123,33 @@
                     <div class="form-group">
                         <label class="col-sm-1">Nome:</label>
                         <div class="col-sm-11"> 
-                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                            <input type="text" class="form-control" name="nome" placeholder="Digite o nome">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">CPF:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">                            
+                            <input type="text" class="form-control" name="cpf" placeholder="Digite o CPF">                            
                         </div>
                         <label class="col-sm-1">RG:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="rg" placeholder="Digite o RG">
+                            <input type="text" class="form-control" name="rg" placeholder="Digite o RG">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Fone:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="tel" placeholder="Digite o Telefone">                           
+                            <input type="text" class="form-control" name="tel" placeholder="Digite o Telefone">                           
                         </div>
                         <label class="col-sm-1">Celular:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cel" placeholder="Digite o Celular">
+                            <input type="text" class="form-control" name="cel" placeholder="Digite o Celular">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Nasc:</label>
                         <div class="col-sm-5"> 
-                            <input type="date" class="form-control" id="nascimento" placeholder="Digite o Nascimento">                          
+                            <input type="date" class="form-control" name="nascimento" placeholder="Digite o Nascimento">                          
                         </div>
                             <label class="col-sm-1">Sexo:</label>
                             <select name="sexo">
@@ -153,27 +160,27 @@
                     <div class="form-group">
                         <label class="col-sm-1">End:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="end" placeholder="Digite o Endereço">                           
+                            <input type="text" class="form-control" name="end" placeholder="Digite o Endereço">                           
                         </div>
                         <label class="col-sm-1">Número:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="num" placeholder="Digite o Número">
+                            <input type="text" class="form-control" name="num" placeholder="Digite o Número">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Bairro:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">                          
+                            <input type="text" class="form-control" name="bairro" placeholder="Digite o Bairro">                          
                         </div>
                         <label class="col-sm-1">CEP:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                            <input type="text" class="form-control" name="cep" placeholder="Digite o CEP">
                         </div>                      
                     </div>
                     <div class="form-group">
                         <label class="col-sm-1">Cidade:</label>
                         <div class="col-sm-5"> 
-                            <input type="text" class="form-control" id="cidade" placeholder="Digite o Cidade">                          
+                            <input type="text" class="form-control" name="cidade" placeholder="Digite o Cidade">                          
                         </div>
                         <label class="col-sm-1">UF:</label>
                         <div class="col-sm-5"> 
@@ -186,7 +193,7 @@
                     <div class="form-group">
                         <label class="col-sm-1">e-mail:</label>
                         <div class="col-sm-11"> 
-                            <input type="text" class="form-control" id="email" placeholder="Digite o e-mail">
+                            <input type="text" class="form-control" name="email" placeholder="Digite o e-mail">
                         </div>
                     </div>
                     <div>
